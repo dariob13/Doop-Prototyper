@@ -26,7 +26,7 @@ Doop's own guide tells agents to invent layouts with inline CSS, stock icons, an
 3. The frame document loads the current theme CSS and `bundle.min.js` from `assets.wien.gv.at`. That is what makes `<wm-*>` render. The shell is in [references/page-shell.md](references/page-shell.md).
 4. Change the example's text, links, and images to the page's content. Keep the tags, slots, and attributes.
 5. If no pattern fits, say so and leave a labelled gap. Do not invent a compliant-looking replacement.
-6. Do not use `search_icons`, `search_logos`, or `generate_image` for the Stadt Wien logo, icons, or facility photos. Icons are `<wm-icon>`. The logo SVG is copied from the header pattern.
+6. Do not use `search_icons`, `search_logos`, or `generate_image` for the Stadt Wien logo, icons, illustrations, or facility photos. The logo SVG is copied from the header pattern. **Icons and illustrations come only from the handbook:** pictograms from <https://handbuch.wien.gv.at/look-and-feel/icons-und-illustrationen/icons/> and illustrations from <https://handbuch.wien.gv.at/look-and-feel/icons-und-illustrationen/illustrationen/>. Find them with `python3 -I scripts/fetch_assets.py icons <Wort>` / `illustrationen <Wort>`. UI icons that come inside a fetched sample (chevrons, burger, search) stay as `<wm-icon>`. Every icon you *choose* is a pictogram `<img>` in the sample's icon slot. Illustrations need Handbuch-team sign-off. See [references/icons-illustrations.md](references/icons-illustrations.md).
 
 ## Authorities
 

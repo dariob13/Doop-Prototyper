@@ -44,7 +44,7 @@ Frame HTML is parsed as a document and morphed into the iframe. A `<link rel="st
 ## What the generic Doop guide gets wrong here
 
 - Inline CSS that restyles a card, header, or button. The theme already did that. Extra CSS is only for a gap the handbook does not cover, and it must be labelled.
-- `search_icons`, `search_logos`, `list_backgrounds`, and `generate_image` for Stadt Wien chrome or official photography.
+- `search_icons`, `search_logos`, `list_backgrounds`, and `generate_image` for Stadt Wien chrome, icons, illustrations, or official photography. Icons and illustrations come only from the handbook catalogs ([icons-illustrations.md](icons-illustrations.md)).
 - Treating `import_webpage` as the prototype. The importer strips scripts. The snapshot is the reference beside the real frames.
 - Stock photography and invented wordmarks.
 

@@ -84,6 +84,10 @@ An imported copy of the live page is a reference only. Doop strips scripts on im
 - [Foundations](skills/stadt-wien-doop-prototyper/references/foundations.md) — tokens for checking a screenshot
 - [Layout archetypes](skills/stadt-wien-doop-prototyper/references/layout-archetypes.md) — sequences taken from live pages
 
+## Icons and illustrations
+
+The skill only uses icons (pictograms) from <https://handbuch.wien.gv.at/look-and-feel/icons-und-illustrationen/icons/> and illustrations from <https://handbuch.wien.gv.at/look-and-feel/icons-und-illustrationen/illustrationen/>. They are cached in `references/icon-catalog.tsv` and `references/illustration-catalog.tsv`. Search with `python3 -I scripts/fetch_assets.py icons <Wort>`. When the handbook adds new ones, refresh the caches with `python3 -I scripts/fetch_assets.py --refresh`. UI icons inside component samples stay as `wm-icon`. Illustrations need sign-off from the Handbuch team.
+
 ## Paper
 
 Paper is the second canvas, used when the prompt names Paper or Doop is not signed in. Paper Desktop must be open. Its MCP is local (`paper mcp` from Paper's MCP panel). The same handbook HTML is written into 375 and 1440 artboards. Paper may not execute the component bundle; the skill says to report that and keep the official markup.

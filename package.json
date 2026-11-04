@@ -1,6 +1,6 @@
 {
   "name": "stadt-wien-doop-prototyper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Agent skill for Stadt Wien (wien.gv.at) prototypes in Doop. Fetches HTML from the Wiener Melange pattern library instead of redrawing components.",
   "bin": {
     "stadt-wien-doop-prototyper": "bin/install.js"
