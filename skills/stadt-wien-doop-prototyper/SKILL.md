@@ -22,7 +22,7 @@ This skill is an independent aid. It is not an official Stadt Wien release and i
 Doop's own guide tells agents to invent layouts with inline CSS, stock icons, and generated images. For this skill, do the opposite of that invention:
 
 1. Call `get_guide` once, because Doop requires it, then follow **this** skill wherever the two disagree.
-2. Every visible region comes from a handbook pattern example, fetched for this task. Read [references/handbuch-fetch.md](references/handbuch-fetch.md) and [references/pattern-index.md](references/pattern-index.md).
+2. Every visible region comes from a handbook pattern example, fetched for this task with `scripts/fetch_pattern.py`. With no shell or no network (the Claude app), use the bundled copies in `references/samples/`. Read [references/handbuch-fetch.md](references/handbuch-fetch.md) and [references/pattern-index.md](references/pattern-index.md).
 3. The frame document loads the current theme CSS and `bundle.min.js` from `assets.wien.gv.at`. That is what makes `<wm-*>` render. The shell is in [references/page-shell.md](references/page-shell.md).
 4. Change the example's text, links, and images to the page's content. Keep the tags, slots, and attributes.
 5. If no pattern fits, say so and leave a labelled gap. Do not invent a compliant-looking replacement.

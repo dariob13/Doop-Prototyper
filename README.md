@@ -8,6 +8,16 @@ This is an independent project, not an official Stadt Wien release. It does not 
 
 ## Install
 
+### Without a terminal (Claude app: Desktop or claude.ai)
+
+1. Turn on code execution: Settings > Capabilities > "Create and edit files". On Team/Enterprise, the owner sets it in Organization settings > Plugins & skills > Policy.
+2. Download [`dist/stadt-wien-doop-prototyper.zip`](https://github.com/dariob13/Doop-Prototyper/raw/main/dist/stadt-wien-doop-prototyper.zip). In Claude go to Customize > Skills, then "+" > Create skill > Upload a skill. On Team/Enterprise the owner can provision it for all members.
+3. Doop: Customize > Connectors > + Add > Add custom connector, URL `https://doop.design/mcp`. In a chat, turn it on under "+" > Connectors.
+
+The skill ships an offline copy of the handbook samples (`references/samples/`), so it also works when the app's sandbox cannot reach handbuch.wien.gv.at.
+
+### With a terminal
+
 Requires Node.js 22.20 or newer for the [Skills CLI](https://github.com/vercel-labs/skills).
 
 ```bash

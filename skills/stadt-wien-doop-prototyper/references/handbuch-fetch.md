@@ -1,5 +1,14 @@
 # Fetching pattern HTML
 
+## Where the markup comes from, in this order
+
+1. **Live, with the script:** `python3 -I scripts/fetch_pattern.py <slug> --list`, then `--variant "…"` or `--index n`. Use `--version` for the theme version. Always use `--compact` for the header. The script follows template links (the header's Vorschau panel is only a link to `/templates/patterns/header/standard/`), makes image URLs absolute, and prints a `<!-- Source: … -->` line per variant.
+2. **The bundled snapshot** in [samples/](samples/INDEX.md), one file per pattern with every variant, for when there is no shell or the sandbox has no network. This is the normal case in the Claude app (claude.ai, Desktop), where people cannot use a terminal. Use the snapshot's theme version (in samples/INDEX.md) in the page shell, and say in the handoff that the snapshot was used.
+3. **The web fetch tool** on the pattern page, only for a pattern missing from the snapshot, and only to confirm text. A markdown conversion drops attributes.
+
+Never write markup from memory. The manual steps below describe what the script does.
+
+
 The pattern library is the source of the markup. A remembered snippet is not.
 
 Index: <https://handbuch.wien.gv.at/pattern-library/patterns/>

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 — 2026-11-04
+
+- No terminal needed. `dist/stadt-wien-doop-prototyper.zip` uploads in the Claude app (Customize > Skills > Upload a skill), or a Team/Enterprise owner provisions it for everyone. Doop connects as a custom connector in the app.
+- `scripts/fetch_pattern.py` fetches the handbook samples. It follows the header's template link, so it copies the real header and not the "Header öffnen" link. `scripts/snapshot_patterns.py` saves an offline copy of all samples to `references/samples/`, and the skill uses it when its sandbox has no network.
+- Handbook changes from 2026-11-04: `divider` is now `trenner`, there is a new pattern `ladebildschirm`, and the icon and illustration catalogs are refreshed.
+
 ## 1.1.0 — 2026-11-04
 
 - Icons and illustrations: only the official handbook sources are allowed. Icons come from <https://handbuch.wien.gv.at/look-and-feel/icons-und-illustrationen/icons/> (228 pictograms) and illustrations from <https://handbuch.wien.gv.at/look-and-feel/icons-und-illustrationen/illustrationen/> (219).
